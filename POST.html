@@ -1,0 +1,33 @@
+<html class="fa-events-icons-ready">
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script src="https://use.fontawesome.com/faf9ab1cbf.js"></script><script src="https://cdn.fontawesome.com:443/js/stats.js"></script><link rel="stylesheet" href="https://use.fontawesome.com/faf9ab1cbf.css" media="all">
+		<style type="text/css">
+			body {
+				padding: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<form class="form-horizontal" action="testapi.cfm" method="post">
+			<div class="col-md-6">
+				<div class="form-group">
+	    			<label for="testPost" class="col-sm-4 control-label">Test POST</label>
+	    			<div class="col-sm-8">
+	    				<a onclick="document.getElementById('postForm').submit();" class="btn btn-success" target="_blank">Test POST</a>
+					</div>
+	    		</div>
+	    	</div>               
+		</form>
+		
+		<form id="postForm" name="postForm" method="POST" target="_blank" action="http://api.tasscloud.com.au/tassweb/api/" style="display:none;">
+			<input type="hidden" name="method" value="getSuppliers">
+			<input type="hidden" name="appcode" value="DEMOAPP">
+			<input type="hidden" name="company" value="10">
+			<input type="hidden" name="v" value="2">
+			<textarea name="token">96yfUt3jgAIYx0o7i3tjprnBpotNO3Md/yv+eToJ8qo=</textarea>
+		</form>
+
+	</body>
+</html>
