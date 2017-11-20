@@ -50,13 +50,13 @@ A basic introduction to the TASS API's.
 
 	Expected Token
 
-	```JAVASCRIPT
+	```HTML
 	96yfUt3jgAIYx0o7i3tjprnBpotNO3Md/yv+eToJ8qo=
 	```
 
 	Expected Token (URL Encoded for GET)
 
-	```JAVASCRIPT
+	```HTML
 	96yfUt3jgAIYx0o7i3tjprnBpotNO3Md%2Fyv%2BeToJ8qo%3D
 	```
 
