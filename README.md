@@ -48,6 +48,18 @@ A basic introduction to the TASS API's.
 	, 'Base64')
 	```
 
+	Expected Token
+
+	```JAVASCRIPT
+	96yfUt3jgAIYx0o7i3tjprnBpotNO3Md/yv+eToJ8qo=
+	```
+
+	Expected Token (URL Encoded for GET)
+
+	```JAVASCRIPT
+	96yfUt3jgAIYx0o7i3tjprnBpotNO3Md%2Fyv%2BeToJ8qo%3D
+	```
+
 * **Error Codes**
 
 	Please refer to HTTP response headers for correct error codes and messages as IIS may reformat or replace JSON responses with standard error templates.
