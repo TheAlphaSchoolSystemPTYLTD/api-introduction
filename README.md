@@ -47,3 +47,7 @@ A basic introduction to the TASS API's.
 	, 'AES/ECB/PKCS5Padding'
 	, 'Base64')
 	```
+
+* **Error Codes**
+
+	Please refer to HTTP response headers for correct error codes and messages as IIS may reformat or replace JSON responses with standard error templates.
