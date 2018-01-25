@@ -1,0 +1,70 @@
+* **Sample DELPHI FUNCTION for varying API methods using POST:**
+```Pascal
+//////////////////////////////
+/// FB_TASS_SET_POST 	  ///
+/////////////////////////////
+	function FB_TASS_SET_POST(const HTTPConnection:string;
+								const method:string;
+								const token:string;
+								const APP_CODE:string;
+								const COMPANY_CODE:string;
+								const VERSION:string;
+								const tokenKey:string;
+								var JS_TASS_RESPONSE:TJSONText;
+								var vouch_code:string;
+								var err:string):integer;
+	var Encrypted_Token : variant;
+		r:integer;
+		Response,REQUEST,URL_REQUEST : string;
+	begin
+		vouch_code := '';
+		r := FB_TASS_ENCRYPT(token,tokenKey,Encrypted_Token, err);
+		if r <> 0 then
+		begin
+			Result := r;
+			Exit;
+		end;
+		URL_REQUEST := 'tassweb/api/'
+		
+		REQUEST := 'method='+method+'&'
+		REQUEST := REQUEST + 'appcode='+URLEncode(APP_CODE)+'&'
+		REQUEST := REQUEST + 'company='+URLEncode(COMPANY_CODE)+'&'
+		REQUEST := REQUEST + 'v='+URLEncode(VERSION)+'&'
+		REQUEST := REQUEST + 'token='+URLEncode(Encrypted_Token)
+		loginfo (REQUEST)
+		try
+			HTTP.Connection := HTTPConnection;
+			HTTP.Open('POST', URL_REQUEST);
+			HTTP.Header['Content-Type'] := 'application/x-www-form-urlencoded';
+			HTTP.ContentAsString := REQUEST
+			HTTP.Send;
+			SetLength(Response, HTTP.Response.Content.Size);
+			HTTP.Response.Content.Read(Response, HTTP.Response.Content.Size)
+			
+			case HTTP.Response.ResponseCode of
+				200 : 
+				begin
+					JS_TASS_RESPONSE := TryCreateJson(response);
+					Result := FB_TASS_RESULT_VALID(JS_TASS_RESPONSE,vouch_code,err)
+				end;
+				401 : 
+				begin
+					Result := FB_TASS_UNAUTHORISED;
+					err := 'FB_TASS_SET_POST: ' + FB_TASS_API_error(Result) + 'Encrypted_Token:'+Encrypted_Token;
+				end;
+			 
+			else
+				begin
+					Result := FB_TASS_HTTP_EXCEPTION;
+					err := 'FB_TASS_SET_POST: ' + FB_TASS_API_error(Result) + '[' + inttostr(HTTP.Response.ResponseCode)+ '] ';
+				end;
+			end;
+	
+			
+		except
+			Result := FB_TASS_HTTP_EXCEPTION;
+			err := 'FB_TASS_SET_POST: ' + FB_TASS_API_error(Result) +' [' + ExceptionToString(ExceptionType, ExceptionParam) + ']';
+			Exit;
+		end;
+		
+	
