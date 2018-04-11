@@ -1,23 +1,28 @@
 using System;
+using System.Web;
 using System.Security.Cryptography;
 
 public class TestEncrypt
 {
 	
-	const String tokenKey = "+TG1ZTqy0hTu5h0KMhCP0A==";
+	const String tokenKey = "x8FWQUedjyiUGlTf5appPQ==";
+	const String appCode = "DEMOAPP";
+	const String companyCode = "10";
+	const String version = "2";
+	const String method = "getStudents";
+	const String endPoint = "http://tass.school.edu.au/tassweb/api/";
 	
 	public static void Main()
 	{
-		string original = "{\"include_label\":\"true\"}";
-		string expectedOutput = "96yfUt3jgAIYx0o7i3tjprnBpotNO3Md/yv+eToJ8qo=";
+		string original = "{\"currentstatus\":\"current\"}";
 		
 		var UTF8 = new System.Text.UTF8Encoding();
 		var encString = Encrypt( original );
 		
 		Console.WriteLine("Original:   {0}", original );
-		Console.WriteLine("Expected:   {0}", expectedOutput);
 		Console.WriteLine("Encrypted:  {0}", encString );
 		Console.WriteLine("Decrypted:  {0}", Decrypt( encString ) );
+		Console.WriteLine("URL:  {0}?method={1}&appcode={2}&company={3}&v={4}&token={5}", endPoint , method , appCode , companyCode , version , HttpUtility.UrlEncode ( encString ) );
 		
 	}
 
