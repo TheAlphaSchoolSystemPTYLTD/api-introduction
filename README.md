@@ -7,6 +7,7 @@ A basic introduction to the TASS API's.
   * POST.html - A HTML page with a form
   * GET.html - A HTML page with an anchor
   * DELPHI POST Example Function - A Delphi Example ( @filebound )
+  * EncryptDecrypt.ps1 - PowerShell Encrypt and Decrypt ( @sam-fisher )
 
 **Request URL Construction**
 
