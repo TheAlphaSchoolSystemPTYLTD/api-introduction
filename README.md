@@ -8,7 +8,8 @@ A basic introduction to the TASS API's.
   * GET.html - A HTML page with an anchor
   * DELPHI POST Example Function - A Delphi Example ( @filebound )
   * EncryptDecrypt.ps1 - PowerShell Encrypt and Decrypt ( @sam-fisher )
-
+  * encryptDecrypt.cfm - CFML Encrypt and Decrypt example ( @ajdyka )
+ 
 **Request URL Construction**
 
 * **Overview**
