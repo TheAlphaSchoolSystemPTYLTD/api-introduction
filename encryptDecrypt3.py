@@ -15,7 +15,7 @@ pip install pycrypto
 """
 import requests
 from Crypto.Cipher import AES
-import urllib
+import urllib.parse
 import base64
 
 # These variables should be configured as per your own parameters for each application in your API Gateway Maintanence portal.
@@ -60,9 +60,9 @@ def getDecryptedToken(token, encrypted):
 def getURLRequest(endPoint, method, appCode, companyCode, apiVersion, parameters, tokenKey):
     encrypted = getEncryptedToken(tokenKey, parameters)
     requestDict = {"method": method, "appcode": appCode, "company": companyCode, "v": apiVersion, "token": encrypted}
-    requestStr = urllib.urlencode(requestDict)
+    requestStr = urllib.parse.urlencode(requestDict)
     URLString = endPoint + '?' + requestStr
-    print URLString
+    print(URLString)
     return URLString
 
 #When the script is invoked, create a URL based on the variables specified at the head of the file. Output to command line.
