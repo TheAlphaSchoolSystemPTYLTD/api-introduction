@@ -9,6 +9,8 @@ A basic introduction to the TASS API's.
   * DELPHI POST Example Function - A Delphi Example ( @filebound )
   * EncryptDecrypt.ps1 - PowerShell Encrypt and Decrypt ( @sam-fisher )
   * encryptDecrypt.cfm - CFML Encrypt and Decrypt example ( @ajdyka )
+  * encryptDecrypt.py - Python Encrypt and Decrypt example ( @liamstevens )
+  * encryptDecrypt3.py - Python3 Encrypt and Decrypt example ( @liamstevens )
  
 **Request URL Construction**
 
