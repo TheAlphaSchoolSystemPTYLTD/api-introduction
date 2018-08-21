@@ -11,6 +11,7 @@ A basic introduction to the TASS API's.
   * encryptDecrypt.cfm - CFML Encrypt and Decrypt example ( @ajdyka )
   * encryptDecrypt.py - Python Encrypt and Decrypt example ( @liamstevens )
   * encryptDecrypt3.py - Python3 Encrypt and Decrypt example ( @liamstevens )
+  * encryptDecrypt.php - PHP Encrypt and Decrypt example ( @liamstevens )
  
 **Request URL Construction**
 
