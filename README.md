@@ -6,12 +6,12 @@ A basic introduction to the TASS API's.
   * encryptDecrypt.cs - A basic C# Encrypt and Decrypt class example
   * POST.html - A HTML page with a form
   * GET.html - A HTML page with an anchor
-  * DELPHI POST Example Function - A Delphi Example ( @filebound )
-  * EncryptDecrypt.ps1 - PowerShell Encrypt and Decrypt ( @sam-fisher )
-  * encryptDecrypt.cfm - CFML Encrypt and Decrypt example ( @ajdyka )
-  * encryptDecrypt.py - Python Encrypt and Decrypt example ( @liamstevens )
-  * encryptDecrypt3.py - Python3 Encrypt and Decrypt example ( @liamstevens )
-  * encryptDecrypt.php - PHP Encrypt and Decrypt example ( @liamstevens, @jtc )
+  * DELPHI POST Example Function - A Delphi Example ([@filebound](https://github.com/filebound))
+  * EncryptDecrypt.ps1 - PowerShell Encrypt and Decrypt ([@sam-fisher](https://github.com/sam-fisher))
+  * encryptDecrypt.cfm - CFML Encrypt and Decrypt example ([@ajdyka](https://github.com/ajdyka))
+  * encryptDecrypt.py - Python Encrypt and Decrypt example ([@liamstevens](https://github.com/liamstevens))
+  * encryptDecrypt3.py - Python3 Encrypt and Decrypt example ([@liamstevens](https://github.com/liamstevens))
+  * encryptDecrypt.php - PHP Encrypt and Decrypt example ([@liamstevens](https://github.com/liamstevens), [@jtc](https://github.com/jtc))
  
 **Request URL Construction**
 
