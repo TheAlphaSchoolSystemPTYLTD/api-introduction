@@ -6,12 +6,12 @@ A basic introduction to the TASS API's.
   * encryptDecrypt.cs - A basic C# Encrypt and Decrypt class example
   * POST.html - A HTML page with a form
   * GET.html - A HTML page with an anchor
-  * DELPHI POST Example Function - A Delphi Example ( @filebound )
-  * EncryptDecrypt.ps1 - PowerShell Encrypt and Decrypt ( @sam-fisher )
-  * encryptDecrypt.cfm - CFML Encrypt and Decrypt example ( @ajdyka )
-  * encryptDecrypt.py - Python Encrypt and Decrypt example ( @liamstevens )
-  * encryptDecrypt3.py - Python3 Encrypt and Decrypt example ( @liamstevens )
-  * encryptDecrypt.php - PHP Encrypt and Decrypt example ( @liamstevens )
+  * DELPHI POST Example Function - A Delphi Example ([@filebound](https://github.com/filebound))
+  * EncryptDecrypt.ps1 - PowerShell Encrypt and Decrypt ([@sam-fisher](https://github.com/sam-fisher))
+  * encryptDecrypt.cfm - CFML Encrypt and Decrypt example ([@ajdyka](https://github.com/ajdyka))
+  * encryptDecrypt.py - Python Encrypt and Decrypt example ([@liamstevens](https://github.com/liamstevens))
+  * encryptDecrypt3.py - Python3 Encrypt and Decrypt example ([@liamstevens](https://github.com/liamstevens))
+  * encryptDecrypt.php - PHP Encrypt and Decrypt example ([@liamstevens](https://github.com/liamstevens), [@jtc](https://github.com/jtc))
  
 **Request URL Construction**
 
@@ -25,11 +25,11 @@ A basic introduction to the TASS API's.
 
 * **Protocol**
 
-	The protocol is defined in the TASS API Setup in tass.web. This can be set to allow HTTP or HTTPS requests. It can also be set to restrict requests to HTTPS only.
+	The protocol is defined in the TASS API Setup in TASS.web. As of TASS v49, this is set to restrict requests to HTTPS only.
 
 * **Domain**
 
-	The domain of the tass.web server you wish to make the request to.
+	The domain of the TASS.web server you wish to make the request to.
 
 * **Method**
 
@@ -37,11 +37,11 @@ A basic introduction to the TASS API's.
 
 * **App Code**
 
-	The App Code as defined in the tass.web TASS API Setup.
+	The App Code as defined in the TASS.web TASS API Setup.
 
 * **Company Code**
 
-	The Company Code for which the TASS API App has been configured in tass.web.
+	The Company Code for which the TASS API App has been configured in TASS.web.
 
 * **Token**
 
