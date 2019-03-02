@@ -25,11 +25,11 @@ A basic introduction to the TASS API's.
 
 * **Protocol**
 
-	The protocol is defined in the TASS API Setup in tass.web. This can be set to allow HTTP or HTTPS requests. It can also be set to restrict requests to HTTPS only.
+	The protocol is defined in the TASS API Setup in TASS.web. This can be set to allow HTTP or HTTPS requests. It can also be set to restrict requests to HTTPS only.
 
 * **Domain**
 
-	The domain of the tass.web server you wish to make the request to.
+	The domain of the TASS.web server you wish to make the request to.
 
 * **Method**
 
@@ -37,11 +37,11 @@ A basic introduction to the TASS API's.
 
 * **App Code**
 
-	The App Code as defined in the tass.web TASS API Setup.
+	The App Code as defined in the TASS.web TASS API Setup.
 
 * **Company Code**
 
-	The Company Code for which the TASS API App has been configured in tass.web.
+	The Company Code for which the TASS API App has been configured in TASS.web.
 
 * **Token**
 
