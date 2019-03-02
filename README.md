@@ -25,7 +25,7 @@ A basic introduction to the TASS API's.
 
 * **Protocol**
 
-	The protocol is defined in the TASS API Setup in TASS.web. This can be set to allow HTTP or HTTPS requests. It can also be set to restrict requests to HTTPS only.
+	The protocol is defined in the TASS API Setup in TASS.web. As of TASS v49, this is set to restrict requests to HTTPS only.
 
 * **Domain**
 
