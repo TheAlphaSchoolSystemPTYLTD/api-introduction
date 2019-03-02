@@ -56,7 +56,7 @@ An example of encrypting and decrypting your Token and accessing the API using P
 			$URLString .= urlencode($dict[$value]);
 			$URLString .= '&';
 		}
-		#Trim the last ampersand because it's not necessary
+		// Trim the last ampersand because it's not necessary
 		$URLString = substr($URLString, 0, -1);
 		#Echo for example purposes, remove this in production
 		echo $URLString;
