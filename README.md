@@ -12,7 +12,7 @@ A basic introduction to the TASS APIs.
   * encryptDecrypt.py - Python Encrypt and Decrypt example ([@liamstevens](https://github.com/liamstevens))
   * encryptDecrypt3.py - Python3 Encrypt and Decrypt example ([@liamstevens](https://github.com/liamstevens))
   * encryptDecrypt.php - PHP Encrypt and Decrypt example ([@liamstevens](https://github.com/liamstevens), [@jtc](https://github.com/jtc))
-  * encryptDecrypt.js - Node.js Encrypt, Decrupt and HTTPS call example ([@ricardorusson](https://github.com/ricardorusson))
+  * encryptDecrypt.js - Node.js Encrypt, Decrypt and HTTPS call example ([@ricardorusson](https://github.com/ricardorusson))
  
 **Request URL Construction**
 
