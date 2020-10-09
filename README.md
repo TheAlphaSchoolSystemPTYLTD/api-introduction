@@ -62,7 +62,7 @@ A basic introduction to the TASS APIs.
 	}
 	```
 	
-	**-Version 3** APIs also utilise JSON Format, and require a **Security Role** to be defined in the setup for the API that grantes the requisite permission point as defined in the assiciated documentation.
+	**- Version 3** APIs also utilise JSON Format, and require a **Security Role** to be defined in the setup for the API that grantes the requisite permission point as defined in the assiciated documentation.
 	
 	```JAVASCRIPT
 	Administration > User Maintenance > Add
