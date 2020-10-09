@@ -64,7 +64,7 @@ A basic introduction to the TASS APIs.
 	```
 	
 	
-	**- Version 3** APIs also utilise JSON Format, and require a **Security Role** to be defined in the setup for the API that grantes the requisite permission point as defined in the assiciated documentation.
+	**- Version 3** APIs also utilise JSON Format, and require a **Security Role** to be defined in the setup for the API that grants the requisite permission point as defined in the assiciated documentation.
 	
 	E.g. The method **IdM > [addAdminUserRoles](https://github.com/TheAlphaSchoolSystemPTYLTD/IdM/blob/master/AddAdminUserRoles.md)** method requires a **Security Role** that is configured for the following permission:
 	
