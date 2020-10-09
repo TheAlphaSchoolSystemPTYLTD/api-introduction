@@ -47,13 +47,13 @@ A basic introduction to the TASS APIs.
 
 * **Version**
 
-	Version **1** APIs utilise Query String Format for the parameter string.
+	**- Version 1** APIs utilise Query String Format for the parameter string.
 	
 	```JAVASCRIPT
 	param1=value1&param2=value2
 	```
 	
-	Version **2** APIs utilise JSON Format for the parameter string.
+	**- Version 2** APIs utilise JSON Format for the parameter string.
 	
 	```JAVASCRIPT
 	{
@@ -62,7 +62,7 @@ A basic introduction to the TASS APIs.
 	}
 	```
 	
-	Version **3** APIs also utilise JSON Format, but also require a **Security Role** to be defined in the setup for the API that grantes the requisite permission point as defined in the assiciated documentation.
+	**-Version 3** APIs also utilise JSON Format, but also require a **Security Role** to be defined in the setup for the API that grantes the requisite permission point as defined in the assiciated documentation.
 	
 	```JAVASCRIPT
 	Administration > User Maintenance > Add
