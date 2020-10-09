@@ -24,8 +24,10 @@ A basic introduction to the TASS APIs.
 	{protocol}://{domain}/tassweb/api/?method={method}&appcode={appcode}&company={companycode}&v={version}&token={token}
 	````
 	
+	E.g.
+	
 	```HTML
-	{protocol}://{domain}/tassweb/api/?method=getStudents&appcode=MYAPP01&company=99&v=3&token=96yfUt3jgAIYx0o7i3tjprnBpotNO3Md%2Fyv%2BeToJ8qo%3D
+	https://school.edu/tassweb/api/?method=getStudents&appcode=MYAPP01&company=99&v=3&token=96yfUt3jgAIYx0o7i3tjprnBpotNO3Md%2Fyv%2BeToJ8qo%3D
 	````
 
 * **Protocol**
