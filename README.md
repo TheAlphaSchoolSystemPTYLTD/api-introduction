@@ -57,10 +57,7 @@ A basic introduction to the TASS APIs.
 	**- Version 2** APIs utilise JSON Format for the parameter string.
 	
 	```JAVASCRIPT
-	{
-		"param1":"value1"
-		, "param2":"value2"
-	}
+	{"param1":"value1","param2":"value2"}
 	```
 	
 	
