@@ -67,7 +67,11 @@ A basic introduction to the TASS APIs.
 	```
 	
 	
-	**- Version 3** APIs also utilise JSON Format, and require a **Security Role** to be defined in the setup for the API that grants the requisite permission point as defined in the assiciated documentation.
+	**- Version 3** APIs also utilise JSON Format, and require a **Security Role** to be defined in the configuration of the API connection by the school in TASS.web program API Gateway Maintenance. Defining a Security Role enables a school to control what data is made visible through the API.
+
+Where a Security Role is defined for an API connection, the data returned by the API will adhere to the permissions associated with this Security Role.
+ 
+For example, if the Security Role defined against the Student Details API doesn’t have permissions to view medical information for students, the data returned by the API will not include student medical information in endpoints such as getmedicalillness, getmedicalcondition etc.
 	
 	E.g. The method **IdM > [addAdminUserRoles](https://github.com/TheAlphaSchoolSystemPTYLTD/IdM/blob/master/AddAdminUserRoles.md)** requires a **Security Role** that is configured for the following permission:
 	
