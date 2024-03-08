@@ -44,7 +44,7 @@ def getEncryptedToken(token, params):
     plaintext += chr(length)*length
     rijndael = AES.new(decoded, AES.MODE_ECB)
     #encrypt the plaintext
-    ciphertext = rijndael.encrypt(plaintext)
+    ciphertext = rijndael.encrypt(plaintext.encode("utf8"))
     ciphertext = base64.b64encode(ciphertext)
     return ciphertext
 
