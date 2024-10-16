@@ -14,16 +14,15 @@ const appCode       = "DEMOAPP";
 const companyCode   = "10";
 const version       = "2";
 const method        = "getStudents";
-const endPoint      = "https://api.tassweb.com.au/tassweb/api/";
+const endPoint      = "https://api.tassweb.com.au/tassweb/api/index.cfm";
 let parameterString = '{"currentstatus":"current"}';
 
 
 var encrypt = function( parameterString , tokenKey ) {
 
     var binaryEncryptionKey = new Buffer.from( tokenKey, "base64" );
-    var binaryIV = new Buffer.from( '' );
 
-    var cipher = crypto.createCipheriv( "AES-128-ECB", binaryEncryptionKey, binaryIV );
+    var cipher = crypto.createCipheriv( "AES-128-ECB", binaryEncryptionKey, Buffer.alloc(0) );
 
     var encryptedString = (
         cipher.update( parameterString, "utf8", "base64" ) +
